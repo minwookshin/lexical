@@ -1,0 +1,17 @@
+[
+  {
+    "path": "after-mixed-size.png",
+    "bytes": 75780,
+    "sha256": "360264077ce79df341fe7404d8e88863b93e73f679a4bf0ab155a77f3c1d08a0"
+  },
+  {
+    "path": "before-mixed-size.png",
+    "bytes": 76016,
+    "sha256": "7b84afb48ef8ca81e7b838d5f9fe3d6816c457b2a51587cf6e5e18624143da29"
+  },
+  {
+    "path": "candidate-sources.json",
+    "bytes": 3200,
+    "sha256": "bf287eabe31d0e5a6e4e41394ec936dedbbde1f6e308a0979f8f4ef06de21f1d"
+  }
+]

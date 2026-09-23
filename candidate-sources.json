@@ -1,0 +1,84 @@
+{
+  "upstream": "facebook/lexical",
+  "tested_base": "bc4dcc814f66e35b00f8e3b8b235e559f07454f2",
+  "scope": "Before/after screenshots were captured on earlier baseline 83e8b4925c6c4f5ecb884036bdfaa2c1a0bb2349. The three geometry candidate files are byte-identical on the recorded parent, where 24 native browser cases and 341 focused unit cases pass. No claim of screenshots recaptured on the newer base is made.",
+  "candidates": [
+    {
+      "key": "lexical-bench",
+      "files": [
+        {
+          "path": "packages/lexical/src/__bench__/dom/editorCycle.bench.ts",
+          "sha256": "94775c61825f25ef24bcb814053cbf5b93b26dda1051991c8dc5eee162f6f4f0"
+        },
+        {
+          "path": "packages/lexical/src/__bench__/dom/editorOperations.bench.ts",
+          "sha256": "272e3b5b0883178f6d02c2605fe4ce9a2d0a150387341efc8e324277066f439d"
+        },
+        {
+          "path": "packages/lexical/src/__bench__/getWritable.bench.ts",
+          "sha256": "caa40f7ebfefed13631938fc7ac11f15800e547515a74e7ac5a4295aad0f4cb9"
+        },
+        {
+          "path": "packages/lexical/src/__bench__/nodeMap.bench.ts",
+          "sha256": "09a740f207a18b87b503164603cb058113289b17fefc65c8d820ce30c96a38e3"
+        },
+        {
+          "path": "packages/lexical/src/__bench__/serialization.bench.ts",
+          "sha256": "a278f0a27a67d1f756d8e50847e6ea6b3f4fa5e29e22ae10011595d7ea219bbd"
+        },
+        {
+          "path": "package.json",
+          "sha256": "5e2b7be21cd42f088e04a1d4b69b952e7b0b2850b5d4ddbbc47dd8b591e21a74"
+        },
+        {
+          "path": "packages/lexical/src/__bench__/README.md",
+          "sha256": "df35eddbfb1f8789f0b5292dc2f8197158065ac8b613a3ce6dcb5d5205ef8526"
+        }
+      ],
+      "patches": [
+        {
+          "name": "lexical-vitest5-benchmarks.patch",
+          "sha256": "59acb8c33c31dc5b9600d95a7e89f2ff886f2dd62af1b3e87e200672a1eca20f"
+        }
+      ]
+    },
+    {
+      "key": "lexical-watch",
+      "files": [
+        {
+          "path": "packages/lexical-compiler/src/__tests__/unit/subpathImports.test.ts",
+          "sha256": "35ecd72563ff76a3530e8b9dd5450bf5e14a8b44ccb08e270ed9840ff99a68ad"
+        }
+      ],
+      "patches": [
+        {
+          "name": "lexical-macos-watch-test.patch",
+          "sha256": "a5e04f36a31b0867800017a2d8883b5e8d17b3833a8cd3cd294b21a06094d4cc"
+        }
+      ]
+    },
+    {
+      "key": "lexical-selection",
+      "files": [
+        {
+          "path": "packages/lexical-selection/src/__tests__/browser/createRectsFromDOMRange.test.ts",
+          "sha256": "c2cff154841f5abb41ab5f2d12d1d3b43f2368bc7a738c96f14691e52de3a552"
+        },
+        {
+          "path": "packages/lexical-selection/src/utils.ts",
+          "sha256": "28f17d26408ca36cd0edf0f436c4edc8c1f71a3ee0de34394eae67e911d80d2e"
+        },
+        {
+          "path": "packages/lexical-utils/src/__tests__/unit/dedupeSelectionRects.test.ts",
+          "sha256": "4447ceab2feaf583fbccc3f2c2a26343a183e6b19069c810cde80583b7ee6d6f"
+        }
+      ],
+      "patches": [
+        {
+          "name": "lexical-round3.patch",
+          "sha256": "fb6bb82d6a3a77b6a648c2e39ae47820befaca896ebc52e8f35c3da49e128df9"
+        }
+      ]
+    }
+  ]
+}
